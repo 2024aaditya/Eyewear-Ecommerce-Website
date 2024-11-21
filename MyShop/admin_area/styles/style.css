@@ -1,0 +1,173 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    background-color: white;
+}
+.wrapper {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+/* Animation for the header */
+.header {
+    height: 150px;
+    background: url('header.jpg') center/cover no-repeat;
+    animation: fadeInHeader 2s ease-in-out; /* Apply fade-in animation */
+}
+
+@keyframes fadeInHeader {
+    0% {
+        opacity: 0; /* Start with 0 opacity (fully transparent) */
+    }
+    100% {
+        opacity: 1; /* End with 1 opacity (fully visible) */
+    }
+}
+
+/* Animation for the left section */
+.left {
+    width: 1300px;
+    height: 600px;
+    background: url('admin.jpg') no-repeat;
+    background-size: cover;
+    float: left;
+    animation: slideInLeft 2s ease-in-out; /* Apply slide-in animation */
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%); /* Start outside the viewport on the left */
+    }
+    100% {
+        transform: translateX(0); /* End with the original position */
+    }
+}
+
+.right {
+    width: 200px;
+    height: auto;
+    border: 1px solid #000; /* Added a border for better visibility */
+    float: left; /* Change float to left */
+    background: white /* Change the background color to green */
+}
+.right a {
+    text-decoration: none;
+    color: black; /* Change to a different color (e.g., orange) */
+    font-size: 24px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left;
+    padding: 10px;
+    margin: 6px 0;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.right a:hover {
+    background-color: aqua; /* Change hover color to match */
+    color: white;
+}
+.right {
+    width: 200px;
+    height: auto;
+    border: 1px solid #000;
+    float: left;
+    background: white;
+    animation: fadeInRight 2s ease-in-out; /* Apply fadeInRight animation */
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0; /* Start with 0 opacity (fully transparent) */
+        transform: translateX(100%); /* Start outside the viewport on the right */
+    }
+    100% {
+        opacity: 1; /* End with 1 opacity (fully visible) */
+        transform: translateX(0); /* End with the original position */
+    }
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+h2 {
+    text-align: center;
+    padding: 20px;
+    color: #007bff;
+    margin: 0;
+}
+
+/* Add some margin below the table for spacing */
+table + p {
+    margin-top: 20px;
+    text-align: center;
+}

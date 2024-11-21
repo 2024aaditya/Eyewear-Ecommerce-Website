@@ -1,0 +1,166 @@
+
+#navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 2px solid #FFA500;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    transition: background 0.3s;
+}
+
+/* Add a smooth background color transition on hover */
+#navbar:hover {
+    background: #444;
+}
+
+
+/* Menu Styles */
+#menu {
+    list-style-type: none;
+    display: flex; /* Display menu items in a row */
+    padding: 0;
+}
+
+#menu li {
+    margin-right: 10px;
+    transition: transform 0.3s; /* Add a smooth scale transition */
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #fff; /* Set text color to white */
+    font-size: 24px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    transition: color 0.3s, font-size 0.3s; /* Smooth color and font size transition on hover */
+}
+
+#menu li a:hover {
+    color: #FFA500;
+    transform: scale(1.1); /* Add a slight scale effect on hover */
+    font-size: 26px; /* Increase font size on hover */
+}
+
+
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the page */
+body {
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the header section */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style the customer review section */
+.customer-reviews {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Center the reviews within a container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the heading in the review section */
+.customer-reviews h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style the form for leaving reviews */
+form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Style the customer reviews */
+.review {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the reviewer info (image and name) */
+.reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.reviewer-info img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.reviewer-info p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Style the review content */
+.review-content p {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* Style the star ratings */
+.rating {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+.rating i {
+    color: #FFD700; /* Gold color for stars */
+}
+;

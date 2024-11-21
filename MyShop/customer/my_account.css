@@ -1,0 +1,145 @@
+/* Style for the navbar */
+#navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center; /* Center the text horizontally */
+}
+
+/* Style for the menu */
+#menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style for the menu items */
+#menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#menu a, #menu li span a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: inline;
+    vertical-align: middle; /* Center the text vertically */
+}
+
+#menu a:hover {
+    color: #007BFF;
+}
+
+/* Hide the "Sign Up" menu item if the customer is not logged in */
+#menu li span {
+    display: none;
+}
+
+/* Show the "Sign Up" menu item when the customer is not logged in */
+#menu li span a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    display: inline;
+    vertical-align: middle; /* Center the text vertically */
+}
+/* Style for the right content */
+#right_content {
+    text-align: center;
+    flex: 2;
+    padding: 20px;
+}
+
+/* Style for the cart information */
+#cart_info {
+    font-size: 24px; /* Increase the font size */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Style for the "Welcome" message */
+#welcome_message {
+    font-size: 28px; /* Increase the font size */
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+/* Style for login/logout links */
+#login_logout_links a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    font-size: 24px; /* Increase the font size */
+    margin-right: 20px;
+}
+
+/* Add hover effect to links */
+#login_logout_links a:hover {
+    color: #0096FF;
+    text-decoration: underline;
+}
+/* Style for the left sidebar */
+#left_sidebar {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Style for the customer image */
+#customer_image {
+    max-width: 150px; /* Adjust the width of the customer image */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Style for the list items in the left sidebar */
+#cats {
+    list-style: none; /* Remove bullets from the list */
+    padding: 0;
+}
+
+#cats li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Style for the Manage Account title */
+#sidebar_title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+/* Style for the h2 heading */
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Style for the "My Orders" link */
+#cats li a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Add hover effect to links */
+#cats li a:hover {
+    color: #0096FF;
+    text-decoration: underline;
+}

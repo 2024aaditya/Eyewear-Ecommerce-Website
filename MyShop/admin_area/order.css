@@ -1,0 +1,54 @@
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the table container */
+table {
+    width: 80%; /* Adjust the table width as needed */
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Style for the table heading */
+table td h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px;
+}
+
+/* Style for table headers */
+table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style for alternating rows */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style for table data cells */
+table td {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Style for links */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Change link color on hover */
+a:hover {
+    color: #0056b3;
+}

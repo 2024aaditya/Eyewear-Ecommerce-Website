@@ -1,0 +1,80 @@
+/* Apply styles to the entire form container */
+form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f7f7f7;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* Style the heading within the form */
+form h2 {
+    color: #333;
+    font-size: 28px;
+}
+
+/* Apply styles to the entire table */
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Style table cells */
+form td {
+    padding: 15px;
+    margin: 10px 0;
+}
+
+/* Style the form labels */
+form td b {
+    font-weight: bold;
+}
+
+/* Apply common styles to text input fields, password fields, and select elements */
+form input[type="text"],
+form input[type="password"],
+form select {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+/* Style file input fields */
+form input[type="file"] {
+    padding: 20px;
+}
+
+/* Style the submit button */
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 24px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 30px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Hover effects for form elements */
+form input[type="text"]:hover,
+form input[type="password"]:hover,
+form select:hover,
+form input[type="file"]:hover,
+form input[type="submit"]:hover {
+    background-color: #4CAF50;
+    color: white;
+    transition: 0.3s;
+}
+
+/* Padding on hover for the submit button */
+form input[type="submit"]:hover {
+    padding: 22px 42px;
+}

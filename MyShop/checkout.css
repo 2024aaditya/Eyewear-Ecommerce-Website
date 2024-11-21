@@ -1,0 +1,123 @@
+/* Center and style the navbar text */
+#navbar {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center; /* Center text horizontally */
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center list horizontally */
+}
+
+#menu li {
+    margin: 0 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#menu a:hover {
+    color: #e44d26;
+}
+
+/* Style the search form */
+#form {
+    display: flex;
+    justify-content: center; /* Center form horizontally */
+}
+
+#form input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: background-color 0.3s;
+}
+
+#form input[type="text"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#form input[type="text"]:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+#form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #e44d26;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#form input[type="submit"]:hover {
+    background-color: #ff7043;
+}
+/* Container for the entire user information and buttons */
+/* Styles for the user-cart-info container */
+#user-cart-info {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+#user-cart-info:hover {
+    background-color: #e0e0e0;
+}
+
+/* Styles for the welcome message */
+#user-cart-info b {
+    font-size: 16px;
+}
+
+/* Style for the cart details */
+.b.cart-details {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Style for the user name */
+.user-name {
+    color: red;
+    font-weight: bold;
+}
+
+/* Styles for buttons */
+button a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    background-color: aqua;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: wheat;
+}
+

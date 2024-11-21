@@ -1,0 +1,170 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    background-color: white;
+}
+.main_wrapper{
+    width: auto;
+    height: auto;
+    margin: auto;  
+}
+.header_wrapper{
+    width: auto;
+    height: 100px;
+    background-color: rgb(194, 19, 19);
+}
+#navbar{
+    width: auto;
+    height: 50px;
+    background-color:aqua;
+    color: black;
+}
+#menu{
+    padding: 0px;
+    line-height: 40px;
+    margin-top: 5px;
+    float: left;
+}
+#menu li{
+    list-style: none;
+    display: inline-block;
+}
+#menu a{
+    color: black;
+    text-decoration: dotted;
+    font-size: 20px;
+    padding: 10px;
+}
+#menu a:hover{
+    text-decoration: underline;
+   color: gray;
+    font-weight: bold;
+}
+/* Style the form container */
+form {
+    display:flex;
+    align-items: center;
+    float:center;
+  }
+  
+  /* Style the input field */
+  input[type="text"] {
+    width: 200px; /* Adjust the width as needed */
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type="submit"] {
+    background-color:black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Add hover effect to the submit button */
+  input[type="submit"]:hover {
+    background-color: black; /* Change the background color on hover */
+  }
+  
+
+#right_content{
+    width: auto;
+    height: auto;
+    background-color: white;
+    float: center;
+}
+#left_sidebar{
+    width: 200px;
+    height: 700px;
+    background-color: white;
+    float: left;
+}
+#footer{
+    width: auto;
+    height: 100px;
+    background-color: rgb(214, 140, 28);
+    color: blueviolet;
+    clear: both;
+}
+#sidebar_title{
+    background-color:aqua;
+    color:black;
+    padding: 10px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cats{
+    text-align: center;
+    padding: 10px;
+}
+#cats li{
+    list-style: none;
+    margin: 10px;
+}
+#cats a{
+    color: gray;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 10px;
+}
+#cats a:hover{
+    color: black;
+    text-decoration: double;
+    font-weight: bold;
+}
+#headline{
+    background-color: black;
+    color: white;
+    float: center;
+    width: auto;
+    padding: 6px;
+    height: 35px;
+}
+#headline_content{
+    float: center;
+}
+/* Style the container for individual products */
+#products_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+  #single_product img{
+    border: 2px solid aqua;
+  }
+
+#footer{
+    width: 100px;
+    height: 500px;
+    background-color: black;
+}

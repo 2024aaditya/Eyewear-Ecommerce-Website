@@ -1,0 +1,55 @@
+/* Style for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style for the table */
+table {
+    width: 80%; /* Reduce the table width */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 10px auto; /* Center the table and reduce the margin */
+}
+
+/* Style for table headers */
+table th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px; /* Increase the font size for table headers */
+}
+
+/* Style for alternating rows */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Style for table data cells */
+table td {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px; /* Increase the font size for table data cells */
+}
+
+/* Style for product images */
+table img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+/* Style for links */
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Change link color on hover */
+a:hover {
+    color: #0056b3;
+}

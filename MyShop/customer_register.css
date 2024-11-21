@@ -1,0 +1,157 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    background-image: url('background-image.jpg'); /* Replace 'background-image.jpg' with your image file */
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* Navbar styles */
+#navbar {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#menu {
+    list-style-type: none;
+}
+
+#menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Header styles */
+b {
+    display: block;
+    text-align: center;
+    margin: 20px;
+    font-size: 24px;
+}
+
+/* Form container styles */
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    margin: 20px auto;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form input field styles */
+form input[type="text"],
+form input[type="password"],
+form select,
+form input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    font-size: 16px;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form select:focus,
+form input[type="file"]:focus {
+    border-color: #555;
+}
+
+/* Submit button styles */
+form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Form header styles */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 28px;
+}
+
+/* Select input styles */
+form select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+    font-size: 16px;
+}
+
+form select:focus {
+    border-color: #555;
+}
+
+/* Login or logout link styles */
+form a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* "Back to Shopping" button styles */
+form button {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 5px;
+    padding: 12px 24px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #eee;
+}
+/* Add a background image to the body */
+body {
+    background-image: url('1234.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

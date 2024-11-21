@@ -1,0 +1,57 @@
+/* Center-align the content */
+.text-center {
+    text-align: center;
+}
+
+/* Style the title */
+h2 {
+    font-size: 24px;
+    color: #333; /* Change the color as needed */
+    margin: 20px 0; /* Add margin to the top and bottom */
+}
+
+/* Style the payment method description */
+.payment-description {
+    font-size: 18px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+/* Style the payment method image */
+.payment-image {
+    max-width: 15%;
+    height: auto;
+    border: 3px solid #007BFF; /* Customize the border color */
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+/* Style the "Pay Offline" link */
+.pay-offline-link {
+    text-decoration: none;
+    color: #007BFF; /* Customize the link color */
+}
+
+/* Style the offline payment description */
+.offline-description {
+    font-size: 18px;
+    text-align: left;
+}
+.pay-offline-link {
+    display: inline-block; /* Make it a block-level element */
+    padding: 10px 20px; /* Add padding to create a box */
+    background-color: #007bff; /* Background color */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline from the link */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Add a box shadow */
+    transition: background-color 0.3s; /* Smooth color transition on hover */
+
+    /* Center the text within the box */
+    text-align: center;
+    line-height: 1;
+}
+
+.pay-offline-link:hover {
+    background-color: #0056b3; /* Change color on hover */
+}

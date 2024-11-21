@@ -1,0 +1,506 @@
+/* Slideshow container */
+.slideshow-container {
+    max-width: auto;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    text-align: center; /* Center the image horizontally */
+}
+
+/* Ensure all images have the same height */
+.mySlides img {
+    height: 300px; /* Set your desired fixed height */
+    width: auto; /* This maintains the aspect ratio */
+}
+
+/* Fade animation */
+.fade {
+   
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.4;
+    }
+    25% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.4;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.4;
+    }
+}
+
+
+/* Apply a reset for margin, padding, and box-sizing to all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set the overall background color and font styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-bottom: 2px solid #FFA500;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    transition: background 0.3s;
+}
+
+/* Add a smooth background color transition on hover */
+#navbar:hover {
+    background: #444;
+}
+
+
+/* Menu Styles */
+#menu {
+    list-style-type: none;
+    display: flex; /* Display menu items in a row */
+    padding: 0;
+}
+
+#menu li {
+    margin-right: 10px;
+    transition: transform 0.3s; /* Add a smooth scale transition */
+}
+
+#menu li a {
+    text-decoration: none;
+    color: #fff; /* Set text color to white */
+    font-size: 24px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
+    transition: color 0.3s, font-size 0.3s; /* Smooth color and font size transition on hover */
+}
+
+#menu li a:hover {
+    color: #FFA500;
+    transform: scale(1.1); /* Add a slight scale effect on hover */
+    font-size: 26px; /* Increase font size on hover */
+}
+
+/* Search Form Styles */
+#form {
+    margin-top: 10px; /* Increase top margin for spacing */
+    text-align: center; /* Center-align the form */
+    padding: 10px; /* Adjust padding for the form box */
+    background: #f4f4f4; /* Background color for the form box */
+    border: 1px solid #ccc; /* Add a border to the form box */
+    border-radius: 5px; /* Add a slight border radius for rounded corners */
+}
+
+#form input[type="text"] {
+    padding: 8px; /* Adjust padding for the input field */
+    width: 60%; /* Set the input field width to 60% of the form box */
+    font-size: 14px; /* Adjust font size for better readability */
+    border: none; /* Remove the input field border */
+    border-radius: 3px; /* Adjust border radius for less rounding */
+}
+
+#form input[type="submit"] {
+    padding: 8px 16px; /* Adjust padding for the submit button */
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px; /* Adjust border radius for less rounding */
+    font-size: 14px; /* Adjust font size for better readability */
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
+
+/* Add animation on hover for the submit button */
+#form input[type="submit"]:hover {
+    background: #444;
+    color: #FFA500;
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+/* Content Area Styles */
+.content_wrapper {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+#left_sidebar {
+    width: 20%;
+    background: #f4f4f4;
+    padding: 20px;
+    transition: background 0.3s, border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    border: 2px solid #0097a7;
+    text-align: center;
+}
+
+#sidebar_title {
+    background: #0097a7;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase title text for style */
+}
+#cats {
+    list-style-type: none;
+    padding: 0;
+}
+
+#cats li {
+    margin: 10px 0; /* Increase margin for spacing */
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px; /* Increase padding for a more prominent look */
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s; /* Add smooth transitions */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a more pronounced box shadow */
+}
+
+#cats li a {
+    text-decoration: none;
+    color: #0097a7; /* Match the sidebar color for consistency */
+    font-weight: bold;
+    text-transform: uppercase; /* Uppercase text for style */
+}
+
+#cats li:hover {
+    background: #0097a7;
+    color: #fff;
+    transform: scale(1.05); /* Slightly scale on hover for an interactive effect */
+}
+/* Dropdown Styles */
+/* Style the container for the dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style the dropdown button */
+.dropbtn {
+    background: #0097a7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Style the dropdown content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #f9f9f9;
+    min-width: 160px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    text-align: center;
+}
+
+/* Style the links within the dropdown */
+.dropdown-content a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Hover effect for links */
+.dropdown-content a:hover {
+    background: #0097a7;
+    color: #fff;
+}
+
+/* Show the dropdown on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style the Welcome and Shopping Cart section */
+.welcome-cart {
+    text-align: center;
+    margin: 10px;
+}
+
+.welcome-text {
+    font-weight: bold;
+    font-size: 18px;
+    color: green;
+}
+
+.customer-email {
+    color: red;
+}
+
+.shopping-cart {
+    color: green;
+}
+
+/* Style the Items and Total Price section */
+.cart-details {
+    margin: 10px;
+    text-align: center;
+}
+
+.cart-items {
+    font-weight: bold;
+    color: black;
+}
+
+/* Style the "Go To Your Cart" button */
+.go-to-cart-button {
+    display: inline-block;
+    background: #0097a7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background 0.3s, color 0.3s;
+}
+
+.go-to-cart-button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Style the Login and Logout links */
+.login-logout {
+    text-align: center;
+    margin: 10px;
+}
+
+.login-link,
+.logout-link {
+    text-decoration: none;
+    padding: 5px 10px;
+    color: #0097a7;
+    font-weight: bold;
+}
+
+.login-link:hover,
+.logout-link:hover {
+    background: #0097a7;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+#products_box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+#single_product {
+    flex: 0 0 calc(33.33% - 10px); /* Distribute products in rows with spacing */
+    margin-bottom: 20px; /* Add space between rows */
+    position: relative;
+    overflow: hidden; /* Clip any content that overflows the container */
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+#single_product img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+#single_product:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    border-color: #0097a7; /* Change border color on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a more pronounced box shadow on hover */
+    background-color: #f9f9f9; /* Change background color on hover */
+}
+
+/* Style the video container */
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Style the control buttons */
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Style the seek bar */
+#seekBar {
+    width: 100%;
+}
+
+#images {
+    text-align: center; /* Center the content horizontally */
+    padding: 20px; /* Add some padding for spacing */
+    background-color: #f0f0f0; /* Background color for the container */
+  }
+  
+  h1 {
+    font-size: 24px; /* Set the font size for the heading */
+    margin-bottom: 20px; /* Add margin at the bottom of the heading */
+  }
+  
+  img {
+    width: 500px; /* Set the width to 100% to make it as wide as the container */
+    display: block; /* Remove any default spacing around images */
+    margin: 0 auto; /* Center the images horizontally */
+    border: 2px solid #333; /* Add a border around the images */
+    margin-bottom: 10px; /* Add margin at the bottom of each image */
+  }
+  /* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Set a background color for the page */
+body {
+    background-color: #f2f2f2;
+}
+
+/* Style the footer section */
+.site-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center; /* Center align footer content */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Style each footer section */
+.footer-section {
+    width: 24%; /* Adjust the width based on your design */
+    margin-bottom: 20px;
+    text-align: left; /* Left-align content within sections */
+}
+
+.footer-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold; /* Make headings bold */
+}
+
+.footer-section p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Style the newsletter form */
+.form {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.form input[type="email"] {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form button {
+    background-color: #FFA500;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.form button:hover {
+    background-color: #FFD700;
+}
+
+/* Style the social icons */
+.social-icons {
+    margin-top: 20px;
+    text-align: center; /* Center align social icons */
+}
+
+.social-icon {
+    font-size: 32px; /* Increase icon size */
+    margin: 0 10px; /* Add space between icons */
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+/* Add hover effect for social icons */
+.social-icon:hover {
+    color: #FFA500;
+}
